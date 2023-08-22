@@ -27,7 +27,7 @@ namespace Store.Api.Book.Tests
             return new AsyncEnumerable<TElement>(expression);
         }
 
-        public object? Execute(Expression expression)
+        public object Execute(Expression expression)
         {
             return _queryProvider.Execute(expression);
         }
